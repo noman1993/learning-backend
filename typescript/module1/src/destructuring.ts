@@ -1,36 +1,26 @@
 {
+  // object destructuring
 
-
-
-// object destructuring
-
-const user = {
+  const user = {
     id: 345,
     name: {
-        fName: "Rahim",
-        mName: "Jabbar",
-        lName: "Karim"
+      fName: "Rahim",
+      mName: "Jabbar",
+      lName: "Karim",
     },
     contactInfo: "01670000000",
-    address: "Lanka"
-}
+    address: "Lanka",
+  };
 
-const {contactInfo:phoneNumber, name:{mName:middleName}, address} = user
+  const {
+    contactInfo: phoneNumber,// name alias
+    name: { mName: middleName },//name alias
+    address,
+  } = user;
 
-// Array destructuring
+  // Array destructuring
 
-const myFriends = ["Rahim", "Karim", "Allah", "Jabbar", "Mujib"]
+  const myFriends = ["Rahim", "Karim", "Allah", "Jabbar", "Mujib"];
 
-const [,,bestName,...rest] = myFriends
-
-
-
-
-
-
-
-
-
-
-
+  const [, , bestName, ...rest] = myFriends;
 }
