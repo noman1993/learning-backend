@@ -1,3 +1,4 @@
+{
 // function
 
 // normal function
@@ -24,4 +25,12 @@ const poorUser = {
     addBalance(balance:number):string{
         return `My running balance is : ${this.balace + balance}`
     }
+}
+
+
+
+const arr : number[] =  [1,4,8]
+
+const sqrArr :number[] = arr.map((elem : number) => elem * elem)
+
 }
