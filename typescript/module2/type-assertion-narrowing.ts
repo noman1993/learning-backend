@@ -24,6 +24,7 @@
 
     const result1 = kgToGrm('100') as string
     const result2 = kgToGrm(100) as number
+    
 
     
     type CustomError = {
